@@ -9,8 +9,9 @@ const Main = () => {
             <Header></Header>
           <div className="container mx-auto">
           <Outlet></Outlet>
-          <Footer></Footer>
+        
           </div>
+          <Footer></Footer>
             
         </div>
     );
