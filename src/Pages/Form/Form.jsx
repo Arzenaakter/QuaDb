@@ -6,7 +6,22 @@ const Form = () => {
         e.preventDefault()
       
         const Name = e.target.name.value
-        console.log(Name);
+        const email = e.target.name.value
+        const phone = e.target.name.value
+        const date = e.target.name.value
+        const bookingInfo  = {Name,email,phone,date}
+
+
+        console.log(bookingInfo);
+        localStorage.setItem('booking-Info', JSON.stringify(bookingInfo));
+
+        // Reset the form
+        e.target.reset();
+
+       
+     
+
+
 
     }
 
